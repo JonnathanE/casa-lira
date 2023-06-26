@@ -71,8 +71,8 @@ export default function Home() {
             <h2 className={styles.subtitles}>Época Dorada</h2>
             <p className={`${styles.text} ${styles.text_spacing_bottom}`}>
               1860-1900: La Casa de la Lira es testigo de la efervescencia
-              cultural y literaria de Cuenca durante la época conocida como "La
-              Edad de Oro". Se convirtió en un espacio para la creación
+              cultural y literaria de Cuenca durante la época conocida como &quot;La
+              Edad de Oro&quot;. Se convirtió en un espacio para la creación
               artística, se impartían clases de piano y otros instrumentos.
               Reconocidos escritores y poetas, como Juan Montalvo y José J.
               Coba, frecuentan la casa y participan en tertulias literarias que
