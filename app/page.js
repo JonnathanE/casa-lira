@@ -15,8 +15,7 @@ import TopSection from "@/components/TopSection";
 export default function Home() {
   return (
     <main className={styles.main}>
-      
-      <TopSection/>
+      <TopSection />
 
       <section
         className={`${styles.sections_wrapp} ${styles.second_section} section_padding`}
@@ -43,7 +42,10 @@ export default function Home() {
 
       <TimeLine />
 
-      <section className={`${styles.sections_wrapper} ${styles.gb_image_01}`}>
+      <section
+        id="epoca-dorada"
+        className={`${styles.sections_wrapper} ${styles.gb_image_01}`}
+      >
         <div className={`${styles.carousel_wrapper}`}>
           <CarouselCustomer images_galary={galary_golden_era} />
         </div>
@@ -82,7 +84,10 @@ export default function Home() {
         ></div>
       </section>
 
-      <section className={`${styles.sections_wrapper} ${styles.gb_image_02}`}>
+      <section
+        id="abandono"
+        className={`${styles.sections_wrapper} ${styles.gb_image_02}`}
+      >
         <div className={`${styles.carousel_wrapper}`}>
           <CarouselCustomer images_galary={galary_abandonment} />
         </div>
@@ -119,7 +124,10 @@ export default function Home() {
         ></div>
       </section>
 
-      <section className={`${styles.sections_wrapper} ${styles.gb_image_03}`}>
+      <section
+        id="incendio"
+        className={`${styles.sections_wrapper} ${styles.gb_image_03}`}
+      >
         <div className={`${styles.section_bootom} section_padding`}>
           <h2 className="subtitles">Incendio</h2>
 
