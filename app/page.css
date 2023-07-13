@@ -1,0 +1,33 @@
+.subtitles {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.text {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text_color_secondary_gray {
+    color: #D1D5DB;
+}
+
+.section_padding {
+    padding: 0px 80px;
+}
+
+@media (max-width:480px) {
+    .subtitles {
+        font-size: 30px;
+    }
+    
+    .text {
+        font-size: 15px;
+    }
+
+    .section_padding {
+        padding: 0px 40px;
+    }
+}

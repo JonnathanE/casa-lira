@@ -1,53 +1,32 @@
 import Image from "next/image";
+import CarouselCustomer from "@/components/CarouselCustomer";
+import "@/app/page.css";
 import styles from "@/styles/home.module.css";
+
+import {
+  galary_golden_era,
+  galary_abandonment,
+  galary_actuality,
+} from "@/utils/data";
+import Footer from "@/components/Footer";
+import TimeLine from "@/components/TimeLine";
+import TopSection from "@/components/TopSection";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section className={styles.parallax_outer}>
-        <Image
-          alt="cielo azul"
-          src="/images/sky-gris.png"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className={`${styles.image_parallax} ${styles.sky}`}
-        />
-        <Image
-          alt="casa de la lira"
-          src="/images/home.png"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className={`${styles.image_parallax} ${styles.home_lira}`}
-        />
-
-        <Image
-          alt="logo lira"
-          src="/images/logolira.png"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className={`${styles.image_parallax} ${styles.logo_lira}`}
-        />
-
-        <div className={`${styles.image_parallax} ${styles.title_wrapp}`}>
-          <h1 className={styles.title}>
-            Proyecto casa de la lira Universidad del Azuay
-          </h1>
-          <p className={styles.subtitle}>Conoce su historia</p>
-        </div>
-      </section>
+      
+      <TopSection/>
 
       <section
-        className={`${styles.sections_wrapp} ${styles.second_section} ${styles.section_padding}`}
+        className={`${styles.sections_wrapp} ${styles.second_section} section_padding`}
       >
         <div className={styles.text_wrapper}>
-          <p className={`${styles.text}`}>
+          <p className={`text`}>
             La Casa de la Lira es una reconocida construcción ubicada en la
             ciudad de Cuenca, en Ecuador.
           </p>
-          <p className={`${styles.text}`}>
+          <p className={`text`}>
             Es considerada un importante patrimonio cultural de la ciudad y es
             conocida por su arquitectura y valor histórico.
           </p>
@@ -60,74 +39,145 @@ export default function Home() {
           sizes="100vw"
           className={`${styles.second_image}`}
         />
+      </section>
+
+      <TimeLine />
+
+      <section className={`${styles.sections_wrapper} ${styles.gb_image_01}`}>
+        <div className={`${styles.carousel_wrapper}`}>
+          <CarouselCustomer images_galary={galary_golden_era} />
+        </div>
+
+        <div className={`${styles.section_bootom} section_padding`}>
+          <h2 className="subtitles">Época Dorada</h2>
+
+          <p className={`text ${styles.text_spacing_bottom}`}>
+            08 de septiembre de 1847, nace José María Rodriguez Durán -hijo de
+            José Nicolás Rodriguez, compositor y maestro de capilla de la
+            iglesia de las Carmelitas- familia de músicos.
+          </p>
+          <ul className={`text ${styles.ul_format}`}>
+            <li>
+              La casa de los Rodríguez, hoy conocida como la casa de la Lira era
+              el sitio ideal para las reuniones artísticas de los cuencanos.
+            </li>
+            <li>
+              En ésta casa se estableció un &quot;conservatorio&quot; donde se
+              dictaban clases de piano y otros instrumentos.
+            </li>
+            <li>
+              Musicalizaba poesía de grandes figuras como Remigio Crespo Toral,
+              Julio Maria Matovelle y Honorato Vazquez.
+            </li>
+            <li>1910 &quot;La Lira de Tomebamba&quot;.</li>
+            <li>
+              En 1920 inicia la construcción de la &quot;casa de la lira&quot;
+              donde Rodriguez por su amor a la música pone como símbolo la Lira.
+            </li>
+          </ul>
+        </div>
+
         <div
-          className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_cirle}`}
+          className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_squares}`}
         ></div>
       </section>
 
-      <section className={`${styles.third_section}`}>
-        <div className={`${styles.back_banner_1}`}>
-          <div className={`${styles.section_padding} ${styles.section_felx}`}>
-            <h2 className={styles.subtitles}>Época Dorada</h2>
-            <p className={`${styles.text} ${styles.text_spacing_bottom}`}>
-              1860-1900: La Casa de la Lira es testigo de la efervescencia
-              cultural y literaria de Cuenca durante la época conocida como &quot;La
-              Edad de Oro&quot;. Se convirtió en un espacio para la creación
-              artística, se impartían clases de piano y otros instrumentos.
-              Reconocidos escritores y poetas, como Juan Montalvo y José J.
-              Coba, frecuentan la casa y participan en tertulias literarias que
-              ayudan a forjar la identidad cultural de la región.
-            </p>
-          </div>
-          <div
-            className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_squares}`}
-          ></div>
+      <section className={`${styles.sections_wrapper} ${styles.gb_image_02}`}>
+        <div className={`${styles.carousel_wrapper}`}>
+          <CarouselCustomer images_galary={galary_abandonment} />
+        </div>
+
+        <div className={`${styles.section_bootom} section_padding`}>
+          <h2 className="subtitles">Abandono</h2>
+
+          <p className={`text ${styles.text_spacing_bottom}`}>
+            José María Rodríguez previo a su fallecimiento en 1940 postuló en su
+            testamento que la casa debería ser donada a un gremio de músicos
+            para que continue el legado pero la familia no lo permite y se queda
+            con la casa.
+          </p>
+          <ul className={`text ${styles.ul_format}`}>
+            <li>
+              La casa fue vendida a una familia proveniente de Tarqui donde
+              sirvió como vivienda, luego como conventillo y a la final,
+              abandonada.
+            </li>
+            <li>
+              Durante su abandono delincuentes la usan como refugio lo que
+              ocasiona la estigmatización del barrio hasta la actualidad.
+            </li>
+            <li>
+              La gente cansada de la delincuencia decide quemar la casa en 1976
+              para que esta gente se vaya.
+            </li>
+            <li>1910 &quot;La Lira de Tomebamba&quot;.</li>
+          </ul>
+        </div>
+
+        <div
+          className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_flames}`}
+        ></div>
+      </section>
+
+      <section className={`${styles.sections_wrapper} ${styles.gb_image_03}`}>
+        <div className={`${styles.section_bootom} section_padding`}>
+          <h2 className="subtitles">Incendio</h2>
+
+          <p className={`text ${styles.text_spacing_bottom}`}>
+            En 1976 hubo un gran incendio en la casa. Solo el frente del
+            edificio permaneció intacto.
+          </p>
+          <ul className={`text ${styles.ul_format}`}>
+            <li>
+              Posteriormente la adquiere la familia Moreno y le entregan a la
+              señora Laura Oramas de Veintimilla.
+            </li>
+            <li>
+              En 1996 la casa de la Lira pasa a ser propiedad de un señor
+              Guiracocha, para finalmente formar parte de los bienes de la
+              municipalidad de Cuenca.
+            </li>
+          </ul>
+        </div>
+
+        <div
+          className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_olas}`}
+        ></div>
+      </section>
+
+      <section
+        id="actualidad"
+        className={`${styles.sections_wrapper} ${styles.gb_image_04}`}
+      >
+        <div className={`${styles.carousel_wrapper}`}>
+          <CarouselCustomer images_galary={galary_actuality} />
+        </div>
+
+        <div className={`${styles.section_bootom} section_padding`}>
+          <h2 className="subtitles">Actualidad</h2>
+
+          <p className={`text ${styles.text_spacing_bottom}`}>
+            Durante la restauración del edificio, se descubrieron varios canales
+            de agua de la ciudad antigua debajo del piso.
+          </p>
+          <ul className={`text ${styles.ul_format}`}>
+            <li>
+              Lo único que se ha conservado y seguirá conservando es la fachada
+              y dos cimientos de dicha casa.
+            </li>
+            <li>
+              Todas las decoraciones coloniales de madera fueron reemplazadas
+              por elementos de hierro.
+            </li>
+            <li>
+              Actualmente es utilizada como aulas de taller de cerámica,
+              eléctricidad, gastronomía, etc.
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section className={`${styles.fourth_section}`}>
-        <div className={`${styles.back_banner_2}`}>
-          <div className={`${styles.section_padding} ${styles.section_felx}`}>
-            <h2 className={styles.subtitles}>Abandono</h2>
-            <p className={`${styles.text} ${styles.text_spacing_bottom}`}>
-              En 1940, a los 93 años, y en la misma casa donde nació, aprendió y
-              enseñó su música, y la de los grandes maestros, falleció don José
-              María Rodríguez, orgullo de la Morlaquia y patrono del
-              Conservatorio de esta ciudad. Luego de la muerte de José María
-              Rodríguez, la Casa de la Lira pasó por un período de abandono y
-              deterioro.
-            </p>
-          </div>
-          <div
-            className={`${styles.banner_bottom_wrapper} ${styles.image_bottom_flames}`}
-          ></div>
-        </div>
-      </section>
-
-
-      <section className={`${styles.fifth_section}`}>
-        <div className={`${styles.back_banner_3}`}>
-          <div className={`${styles.section_padding} ${styles.section_felx}`}>
-            <h2 className={styles.subtitles}>Incendio</h2>
-            <p className={`${styles.text} ${styles.text_spacing_bottom}`}>
-            1978: Incendio de la casa, solo se logró conservar la fachada. A pesar de ello, sigue siendo un lugar con valor histórico y cultural en Cuenca, y se llevan a cabo esfuerzos de restauración para preservar su patrimonio arquitectónico.
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-      <section className={`${styles.sixth_section}`}>
-        <div className={`${styles.back_banner_4}`}>
-          <div className={`${styles.section_padding} ${styles.section_felx}`}>
-            <h2 className={styles.subtitles}>Actualidad</h2>
-            <p className={`${styles.text} ${styles.text_spacing_bottom}`}>
-            2000-presente: La Casa de la Lira se convierte en un importante centro cultural en Cuenca, albergando exposiciones, conciertos, presentaciones literarias y otras actividades culturales. Es considerada un ícono de la historia y la identidad cultural de la ciudad, y sigue siendo un lugar de encuentro para la comunidad artística y literaria de Cuenca.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <Footer />
     </main>
   );
 }
