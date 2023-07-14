@@ -7,7 +7,7 @@ import {
   galary_golden_era,
   galary_abandonment,
   galary_actuality,
-  galary_fire
+  galary_fire,
 } from "@/utils/data";
 import Footer from "@/components/Footer";
 import TimeLine from "@/components/TimeLine";
