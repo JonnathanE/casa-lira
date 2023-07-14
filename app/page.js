@@ -74,7 +74,7 @@ export default function Home() {
               Musicalizaba poesía de grandes figuras como Remigio Crespo Toral,
               Julio Maria Matovelle y Honorato Vazquez.
             </li>
-            <li>1910 &quot;La Lira de Tomebamba&quot;.</li>
+            <li>En 1919 se dio la primera fiesta de la lira.</li>
             <li>
               En 1920 inicia la construcción de la &quot;casa de la lira&quot;
               donde Rodriguez por su amor a la música pone como símbolo la Lira.
