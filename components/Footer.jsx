@@ -6,7 +6,7 @@ import "@/styles/footer.css";
 const Footer = () => {
   return (
     <footer className="footer_section">
-        <div className="logo_footer_wrapper">
+      <div className="logo_footer_wrapper">
         <Image
           alt="casa de la lira"
           src="/images/logo_2.png"
@@ -15,10 +15,20 @@ const Footer = () => {
           sizes="100vw"
           //   className={`${styles.second_image}`}
         />
+        <Image
+          alt="logo proyecto inmersión a la lira"
+          src="/images/DAyA_UDA_color.png"
+          width="162"
+          height="60"
+          sizes="100vw"
+          className="image_uda_section"
+        />
       </div>
       <div>
         <span className="title_footer">DIRECCIÓN:</span>
-        <p className="text text_color_secondary_gray">La Condamine 12-124, Cuenca</p>
+        <p className="text text_color_secondary_gray">
+          La Condamine 12-124, Cuenca
+        </p>
       </div>
       <div className="time_section">
         <span className="title_footer">Horario:</span>
@@ -51,7 +61,6 @@ const Footer = () => {
           <p className="text">Cerrado</p>
         </div>
       </div>
-      
     </footer>
   );
 };

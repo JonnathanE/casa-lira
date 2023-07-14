@@ -80,7 +80,8 @@
 }
 
 .section_bootom {
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    margin-bottom: 50px;
 }
 
 .image_bottom_cirle {

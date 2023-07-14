@@ -22,6 +22,11 @@
 
 .logo_footer_wrapper {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5PX;
 }
 
 @media screen and (max-width:480px) {

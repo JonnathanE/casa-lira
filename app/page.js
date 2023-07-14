@@ -7,10 +7,13 @@ import {
   galary_golden_era,
   galary_abandonment,
   galary_actuality,
+  galary_fire
 } from "@/utils/data";
 import Footer from "@/components/Footer";
 import TimeLine from "@/components/TimeLine";
 import TopSection from "@/components/TopSection";
+import UdaSection from "@/components/UdaSection";
+import PorfolioSection from "@/components/PorfolioSection";
 
 export default function Home() {
   return (
@@ -128,6 +131,9 @@ export default function Home() {
         id="incendio"
         className={`${styles.sections_wrapper} ${styles.gb_image_03}`}
       >
+        <div className={`${styles.carousel_wrapper}`}>
+          <CarouselCustomer images_galary={galary_fire} />
+        </div>
         <div className={`${styles.section_bootom} section_padding`}>
           <h2 className="subtitles">Incendio</h2>
 
@@ -184,6 +190,10 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      <UdaSection />
+
+      <PorfolioSection />
 
       <Footer />
     </main>
